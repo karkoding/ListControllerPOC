@@ -25,7 +25,7 @@ final class ViewController: UIViewController {
     }
     
     @objc func handleDidTap() {
-      let listViewContorller = ListViewController()
+        let listViewContorller = VisibilityUIComposer.makeVisibilityUI()
         listViewContorller.modalPresentationStyle = .pageSheet
         if let sheet = listViewContorller.sheetPresentationController { sheet.detents = [.medium()] }
         self.present(listViewContorller, animated: true)

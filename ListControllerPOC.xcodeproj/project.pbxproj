@@ -33,6 +33,7 @@
 		DA5FEABF29BE2738007CF7CE /* VisibilityCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEABE29BE2738007CF7CE /* VisibilityCellViewModel.swift */; };
 		DA5FEAC429BE2765007CF7CE /* VisibilityCellControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAC229BE2765007CF7CE /* VisibilityCellControllerTests.swift */; };
 		DA5FEAC529BE2765007CF7CE /* VisibilityHeaderControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAC329BE2765007CF7CE /* VisibilityHeaderControllerTests.swift */; };
+		DA5FEAC829BE2C89007CF7CE /* VisibilityUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAC729BE2C89007CF7CE /* VisibilityUIComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		DA5FEABE29BE2738007CF7CE /* VisibilityCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityCellViewModel.swift; sourceTree = "<group>"; };
 		DA5FEAC229BE2765007CF7CE /* VisibilityCellControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityCellControllerTests.swift; sourceTree = "<group>"; };
 		DA5FEAC329BE2765007CF7CE /* VisibilityHeaderControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityHeaderControllerTests.swift; sourceTree = "<group>"; };
+		DA5FEAC729BE2C89007CF7CE /* VisibilityUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityUIComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 		DA5FEAAC29BE26D2007CF7CE /* Visibility */ = {
 			isa = PBXGroup;
 			children = (
+				DA5FEAC629BE2C7F007CF7CE /* Composer */,
 				DA5FEAB129BE2707007CF7CE /* Controller */,
 				DA5FEABD29BE272B007CF7CE /* View */,
 				DA5FEAC029BE273B007CF7CE /* ViewModel */,
@@ -232,6 +235,14 @@
 				DA5FEAC329BE2765007CF7CE /* VisibilityHeaderControllerTests.swift */,
 			);
 			path = Visibility;
+			sourceTree = "<group>";
+		};
+		DA5FEAC629BE2C7F007CF7CE /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				DA5FEAC729BE2C89007CF7CE /* VisibilityUIComposer.swift */,
+			);
+			path = Composer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +352,7 @@
 				DA5FEA9129BE25CD007CF7CE /* CellController.swift in Sources */,
 				DA5FEAB929BE2724007CF7CE /* VisibilityHeaderView.swift in Sources */,
 				DA5FEABB29BE2724007CF7CE /* VisibilityCell.swift in Sources */,
+				DA5FEAC829BE2C89007CF7CE /* VisibilityUIComposer.swift in Sources */,
 				DA5FEA7829BE24E3007CF7CE /* ViewController.swift in Sources */,
 				DA5FEA7429BE24E3007CF7CE /* AppDelegate.swift in Sources */,
 				DA5FEA7629BE24E3007CF7CE /* SceneDelegate.swift in Sources */,
