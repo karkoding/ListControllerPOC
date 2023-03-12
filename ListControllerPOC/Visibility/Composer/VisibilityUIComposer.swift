@@ -15,7 +15,7 @@ public final class VisibilityUIComposer {
                 makeSectionListCellController2()
             ])
         
-        let singleSelectionSectionController = SingleSelectionSectionController(sectionControllers: [
+        let _ = SingleSelectionSectionController(sectionControllers: [
             makeSectionListCellController3()
         ])
         
@@ -25,7 +25,6 @@ public final class VisibilityUIComposer {
             VisibilityCellController.configure(tableView: $0)
             VisibilityHeaderController.configure(tableView: $0)
         }
-        
         
         // It works with one section
         // listViewController.display(sectionControllers: [singleSelectionSectionController])
