@@ -10,8 +10,9 @@ import UIKit
 final class VisibilityHeaderView: UITableViewHeaderFooterView {
     let titleLabel: UILabel = {
         let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 24)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "VISIBILITY"
+        label.text = "Visibility"
         return label
     }()
     

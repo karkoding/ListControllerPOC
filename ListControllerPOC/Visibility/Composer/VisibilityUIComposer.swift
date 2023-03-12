@@ -23,6 +23,11 @@ public final class VisibilityUIComposer {
             headerController: visibilityHeaderController
         )
         
+        let sectionController2 = SectionListController(
+            cellControllers: visibilityCellControllers,
+            headerController: visibilityHeaderController
+        )
+        
         let listViewController = ListViewController()
         
         listViewController.configureListView = {
