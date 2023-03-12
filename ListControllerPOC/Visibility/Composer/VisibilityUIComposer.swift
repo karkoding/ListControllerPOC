@@ -11,12 +11,12 @@ public final class VisibilityUIComposer {
     public static func makeVisibilityUI() -> UIViewController {
         let multiSelectionSectionController = MultiSelectionSectionController(
             sectionControllers: [
-                makeSectionListCellController1(),
-                makeSectionListCellController2()
+                makeSectionCellController1(),
+                makeSectionCellController2()
             ])
         
         let _ = SingleSelectionSectionController(sectionControllers: [
-            makeSectionListCellController3()
+            makeSectionCellController3()
         ])
         
         let listViewController = ListViewController()
@@ -27,7 +27,7 @@ public final class VisibilityUIComposer {
         }
         
         // It works with one section
-        // listViewController.display(sectionControllers: [singleSelectionSectionController])
+       // listViewController.display(sectionControllers: [singleSelectionSectionController])
         
         // It crashes with multiple sections
         // listViewController.display(sectionControllers: [multiSelectionSectionController, singleSelectionSectionController])
@@ -38,7 +38,7 @@ public final class VisibilityUIComposer {
         return listViewController
     }
     
-    private static func makeSectionListCellController1() -> SectionController {
+    private static func makeSectionCellController1() -> SectionController {
         let visibilityHeaderController = VisibilityHeaderController(title: "Visibility 1 (Multi Selection)")
         
         let visibilityList = VisibilityLevel.allCases
@@ -56,7 +56,7 @@ public final class VisibilityUIComposer {
         return sectionController
     }
     
-    private static func makeSectionListCellController2() -> SectionController {
+    private static func makeSectionCellController2() -> SectionController {
         let visibilityHeaderController = VisibilityHeaderController(title: "Visibility 2 (Multi Selection)")
         
         let visibilityList = VisibilityLevel.allCases
@@ -74,7 +74,7 @@ public final class VisibilityUIComposer {
         return sectionController
     }
     
-    private static func makeSectionListCellController3() -> SectionController {
+    private static func makeSectionCellController3() -> SectionController {
         let visibilityHeaderController = VisibilityHeaderController(title: "Visibility 3 (Single Selection)")
         
         let visibilityList = VisibilityLevel.allCases
