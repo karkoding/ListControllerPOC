@@ -34,6 +34,7 @@
 		DA5FEAC429BE2765007CF7CE /* VisibilityCellControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAC229BE2765007CF7CE /* VisibilityCellControllerTests.swift */; };
 		DA5FEAC529BE2765007CF7CE /* VisibilityHeaderControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAC329BE2765007CF7CE /* VisibilityHeaderControllerTests.swift */; };
 		DA5FEAC829BE2C89007CF7CE /* VisibilityUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAC729BE2C89007CF7CE /* VisibilityUIComposer.swift */; };
+		DA5FEACA29BE3188007CF7CE /* MultiSelectionSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAC929BE3188007CF7CE /* MultiSelectionSectionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		DA5FEAC229BE2765007CF7CE /* VisibilityCellControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityCellControllerTests.swift; sourceTree = "<group>"; };
 		DA5FEAC329BE2765007CF7CE /* VisibilityHeaderControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityHeaderControllerTests.swift; sourceTree = "<group>"; };
 		DA5FEAC729BE2C89007CF7CE /* VisibilityUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityUIComposer.swift; sourceTree = "<group>"; };
+		DA5FEAC929BE3188007CF7CE /* MultiSelectionSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionSectionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				DA5FEA8929BE25CD007CF7CE /* SectionHeaderController.swift */,
 				DA5FEA8C29BE25CD007CF7CE /* SectionFooterController.swift */,
 				DA5FEA8B29BE25CD007CF7CE /* CellController.swift */,
+				DA5FEAC929BE3188007CF7CE /* MultiSelectionSectionController.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				DA5FEA8F29BE25CD007CF7CE /* SectionHeaderController.swift in Sources */,
 				DA5FEABA29BE2724007CF7CE /* VisibilityLevel+iconImage.swift in Sources */,
 				DA5FEABC29BE2724007CF7CE /* VisibilityImage.swift in Sources */,
+				DA5FEACA29BE3188007CF7CE /* MultiSelectionSectionController.swift in Sources */,
 				DA5FEAB329BE270F007CF7CE /* VisibilityLevel.swift in Sources */,
 				DA5FEA8E29BE25CD007CF7CE /* SectionController.swift in Sources */,
 				DA5FEAB029BE2701007CF7CE /* VisibilityCellController.swift in Sources */,

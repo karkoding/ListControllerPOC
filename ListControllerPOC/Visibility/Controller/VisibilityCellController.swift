@@ -31,4 +31,8 @@ extension VisibilityCellController: CellController {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         viewModel.updateSelection()
     }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        viewModel.updateSelection()
+    }
 }

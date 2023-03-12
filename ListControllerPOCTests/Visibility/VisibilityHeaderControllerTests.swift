@@ -24,7 +24,7 @@ final class VisibilityHeaderControllerTests: XCTestCase {
         let headerView = sut.tableView(tableView, viewForHeaderInSection: 0)
         
         XCTAssertTrue(headerView is VisibilityHeaderView)
-        XCTAssertEqual(try XCTUnwrap(headerView as? VisibilityHeaderView).titleLabel.text, "VISIBILITY")
+        XCTAssertEqual(try XCTUnwrap(headerView as? VisibilityHeaderView).titleLabel.text, "Visibility")
     }
 }
 

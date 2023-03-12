@@ -23,10 +23,7 @@ public final class VisibilityUIComposer {
             headerController: visibilityHeaderController
         )
         
-        let sectionController2 = SectionListController(
-            cellControllers: visibilityCellControllers,
-            headerController: visibilityHeaderController
-        )
+        let multiSelectionSectionController = MultiSelectionSectionController(sectionControllers: [sectionController])
         
         let listViewController = ListViewController()
         
@@ -35,7 +32,7 @@ public final class VisibilityUIComposer {
             VisibilityHeaderController.configure(tableView: $0)
         }
         
-        listViewController.display(sectionControllers: [sectionController])
+        listViewController.display(sectionControllers: [multiSelectionSectionController])
         
         return listViewController
     }
