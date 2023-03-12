@@ -1,5 +1,5 @@
 //
-//  MultiSelectionSectionController.swift
+//  SingleSelectionSectionController.swift
 //  ListControllerPOC
 //
 //  Created by Karthik K Manoj on 12/03/23.
@@ -7,7 +7,9 @@
 
 import UIKit
 
-public final class MultiSelectionSectionController: NSObject {
+public final class SingleSelectionSectionController: NSObject {
+    private var selectedIndexPath: IndexPath?
+    private var selectedSectionController: SectionController?
     let sectionControllers: [SectionController]
     
     public init(sectionControllers: [SectionController]) {
@@ -15,7 +17,7 @@ public final class MultiSelectionSectionController: NSObject {
     }
 }
 
-extension MultiSelectionSectionController: SectionController {
+extension SingleSelectionSectionController: SectionController {
     public func numberOfSections(in tableView: UITableView) -> Int {
         sectionControllers.reduce(0) { $0 + ($1.numberOfSections?(in: tableView) ?? 1) }
     }
@@ -28,7 +30,19 @@ extension MultiSelectionSectionController: SectionController {
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let selectedIndexPath = selectedIndexPath,
+                 let selectedSectionController = selectedSectionController else {
+            self.selectedIndexPath = indexPath
+            self.selectedSectionController = sectionControllers[indexPath.section]
+            selectedSectionController?.tableView?(tableView, didSelectRowAt: indexPath)
+            return
+        }
+
+        selectedSectionController.tableView?(tableView, didDeselectRowAt: selectedIndexPath)
         sectionControllers[indexPath.section].tableView?(tableView, didSelectRowAt: indexPath)
+
+        self.selectedIndexPath = indexPath
+        self.selectedSectionController = sectionControllers[indexPath.section]
     }
     
     public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

@@ -9,7 +9,38 @@ import UIKit
 
 public final class VisibilityUIComposer {
     public static func makeVisibilityUI() -> UIViewController {
-        let visibilityHeaderController = VisibilityHeaderController()
+        let multiSelectionSectionController = MultiSelectionSectionController(
+            sectionControllers: [
+                makeSectionListCellController1(),
+                makeSectionListCellController2()
+            ])
+        
+        let singleSelectionSectionController = SingleSelectionSectionController(sectionControllers: [
+            makeSectionListCellController3()
+        ])
+        
+        let listViewController = ListViewController()
+        
+        listViewController.configureListView = {
+            VisibilityCellController.configure(tableView: $0)
+            VisibilityHeaderController.configure(tableView: $0)
+        }
+        
+        
+        // It works with one section
+        // listViewController.display(sectionControllers: [singleSelectionSectionController])
+        
+        // It crashes with multiple sections
+        // listViewController.display(sectionControllers: [multiSelectionSectionController, singleSelectionSectionController])
+        
+        // It works with one section
+        listViewController.display(sectionControllers: [multiSelectionSectionController])
+        
+        return listViewController
+    }
+    
+    private static func makeSectionListCellController1() -> SectionController {
+        let visibilityHeaderController = VisibilityHeaderController(title: "Visibility 1 (Multi Selection)")
         
         let visibilityList = VisibilityLevel.allCases
         let visibilityCellControllers = visibilityList.map {
@@ -23,17 +54,42 @@ public final class VisibilityUIComposer {
             headerController: visibilityHeaderController
         )
         
-        let multiSelectionSectionController = MultiSelectionSectionController(sectionControllers: [sectionController])
+        return sectionController
+    }
+    
+    private static func makeSectionListCellController2() -> SectionController {
+        let visibilityHeaderController = VisibilityHeaderController(title: "Visibility 2 (Multi Selection)")
         
-        let listViewController = ListViewController()
-        
-        listViewController.configureListView = {
-            VisibilityCellController.configure(tableView: $0)
-            VisibilityHeaderController.configure(tableView: $0)
+        let visibilityList = VisibilityLevel.allCases
+        let visibilityCellControllers = visibilityList.map {
+            let viewModel = VisibilityCellViewModel(model: $0)
+            let visibilityCellController = VisibilityCellController(viewModel: viewModel)
+            return visibilityCellController
         }
         
-        listViewController.display(sectionControllers: [multiSelectionSectionController])
+        let sectionController = SectionListController(
+            cellControllers: visibilityCellControllers,
+            headerController: visibilityHeaderController
+        )
         
-        return listViewController
+        return sectionController
+    }
+    
+    private static func makeSectionListCellController3() -> SectionController {
+        let visibilityHeaderController = VisibilityHeaderController(title: "Visibility 3 (Single Selection)")
+        
+        let visibilityList = VisibilityLevel.allCases
+        let visibilityCellControllers = visibilityList.map {
+            let viewModel = VisibilityCellViewModel(model: $0)
+            let visibilityCellController = VisibilityCellController(viewModel: viewModel)
+            return visibilityCellController
+        }
+        
+        let sectionController = SectionListController(
+            cellControllers: visibilityCellControllers,
+            headerController: visibilityHeaderController
+        )
+        
+        return sectionController
     }
 }

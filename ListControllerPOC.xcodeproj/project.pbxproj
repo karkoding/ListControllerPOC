@@ -35,6 +35,7 @@
 		DA5FEAC529BE2765007CF7CE /* VisibilityHeaderControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAC329BE2765007CF7CE /* VisibilityHeaderControllerTests.swift */; };
 		DA5FEAC829BE2C89007CF7CE /* VisibilityUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAC729BE2C89007CF7CE /* VisibilityUIComposer.swift */; };
 		DA5FEACA29BE3188007CF7CE /* MultiSelectionSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAC929BE3188007CF7CE /* MultiSelectionSectionController.swift */; };
+		DA5FEACC29BE3968007CF7CE /* SingleSelectionSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEACB29BE3968007CF7CE /* SingleSelectionSectionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		DA5FEAC329BE2765007CF7CE /* VisibilityHeaderControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityHeaderControllerTests.swift; sourceTree = "<group>"; };
 		DA5FEAC729BE2C89007CF7CE /* VisibilityUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityUIComposer.swift; sourceTree = "<group>"; };
 		DA5FEAC929BE3188007CF7CE /* MultiSelectionSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectionSectionController.swift; sourceTree = "<group>"; };
+		DA5FEACB29BE3968007CF7CE /* SingleSelectionSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectionSectionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				DA5FEA8C29BE25CD007CF7CE /* SectionFooterController.swift */,
 				DA5FEA8B29BE25CD007CF7CE /* CellController.swift */,
 				DA5FEAC929BE3188007CF7CE /* MultiSelectionSectionController.swift */,
+				DA5FEACB29BE3968007CF7CE /* SingleSelectionSectionController.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				DA5FEA7429BE24E3007CF7CE /* AppDelegate.swift in Sources */,
 				DA5FEA7629BE24E3007CF7CE /* SceneDelegate.swift in Sources */,
 				DA5FEA9329BE25CD007CF7CE /* ListViewController.swift in Sources */,
+				DA5FEACC29BE3968007CF7CE /* SingleSelectionSectionController.swift in Sources */,
 				DA5FEAAF29BE2701007CF7CE /* VisibilityHeaderController.swift in Sources */,
 				DA5FEA8F29BE25CD007CF7CE /* SectionHeaderController.swift in Sources */,
 				DA5FEABA29BE2724007CF7CE /* VisibilityLevel+iconImage.swift in Sources */,

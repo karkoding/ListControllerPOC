@@ -8,6 +8,12 @@
 import UIKit
 
 final class VisibilityHeaderController {
+    private let title: String
+    
+    init(title: String) {
+        self.title = title
+    }
+    
     static func configure(tableView: UITableView) {
         tableView.register(
             VisibilityHeaderView.self,
@@ -18,6 +24,11 @@ final class VisibilityHeaderController {
 
 extension VisibilityHeaderController: SectionHeaderController {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        tableView.dequeueReusableHeaderFooterView(withIdentifier: String(describing: VisibilityHeaderView.self))
+        let visiblityHeaderView = tableView.dequeueReusableHeaderFooterView(
+            withIdentifier: String(describing: VisibilityHeaderView.self)
+        ) as! VisibilityHeaderView
+        
+        visiblityHeaderView.titleLabel.text = title
+        return visiblityHeaderView
     }
 }
