@@ -1,6 +1,6 @@
 //
 //  SectionListController.swift
-//  Karthik
+//  ListControllerPOC
 //
 //  Created by Karthik K Manoj on 09/03/23.
 //

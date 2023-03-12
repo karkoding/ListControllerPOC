@@ -1,6 +1,6 @@
 //
 //  VisibilityHeaderView.swift
-//  Karthik
+//  ListControllerPOC
 //
 //  Created by Karthik K Manoj on 12/03/23.
 //

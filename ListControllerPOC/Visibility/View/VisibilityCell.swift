@@ -1,6 +1,6 @@
 //
 //  VisibilityCell.swift
-//  Karthik
+//  ListControllerPOC
 //
 //  Created by Karthik K Manoj on 10/03/23.
 //
@@ -60,11 +60,11 @@ private extension VisibilityCell {
     
     func buildConstraints() {
         NSLayoutConstraint.activate([
-            iconImageView.heightAnchor.constraint(equalToConstant: 32),
-            iconImageView.widthAnchor.constraint(equalToConstant: 32),
-            iconImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 12),
+            iconImageView.heightAnchor.constraint(equalToConstant: 16),
+            iconImageView.widthAnchor.constraint(equalToConstant: 16),
+            iconImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 24),
             iconImageView.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor),
-            titleLabel.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 12),
+            titleLabel.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 24),
             titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 12),
             titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -12),
             titleLabel.trailingAnchor.constraint(equalTo: checkmarkImageView.leadingAnchor, constant: -12),

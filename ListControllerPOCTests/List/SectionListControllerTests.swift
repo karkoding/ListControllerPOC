@@ -1,6 +1,6 @@
 //
 //  SectionListControllerTests.swift
-//  KarthikTests
+//  ListControllerPOCTests
 //
 //  Created by Karthik K Manoj on 08/03/23.
 //
