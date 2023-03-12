@@ -13,7 +13,37 @@
 		DA5FEA7B29BE24E3007CF7CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA5FEA7929BE24E3007CF7CE /* Main.storyboard */; };
 		DA5FEA7D29BE24E4007CF7CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA5FEA7C29BE24E4007CF7CE /* Assets.xcassets */; };
 		DA5FEA8029BE24E4007CF7CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA5FEA7E29BE24E4007CF7CE /* LaunchScreen.storyboard */; };
+		DA5FEA8E29BE25CD007CF7CE /* SectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEA8829BE25CD007CF7CE /* SectionController.swift */; };
+		DA5FEA8F29BE25CD007CF7CE /* SectionHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEA8929BE25CD007CF7CE /* SectionHeaderController.swift */; };
+		DA5FEA9029BE25CD007CF7CE /* SectionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEA8A29BE25CD007CF7CE /* SectionListController.swift */; };
+		DA5FEA9129BE25CD007CF7CE /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEA8B29BE25CD007CF7CE /* CellController.swift */; };
+		DA5FEA9229BE25CD007CF7CE /* SectionFooterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEA8C29BE25CD007CF7CE /* SectionFooterController.swift */; };
+		DA5FEA9329BE25CD007CF7CE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEA8D29BE25CD007CF7CE /* ListViewController.swift */; };
+		DA5FEAA429BE2610007CF7CE /* SectionListControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAA229BE2610007CF7CE /* SectionListControllerTests.swift */; };
+		DA5FEAA529BE2610007CF7CE /* ListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAA329BE2610007CF7CE /* ListViewControllerTests.swift */; };
+		DA5FEAA829BE261F007CF7CE /* ItemCellControllerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAA729BE261F007CF7CE /* ItemCellControllerSpy.swift */; };
+		DA5FEAAA29BE265F007CF7CE /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAA929BE265F007CF7CE /* XCTestCase+MemoryLeakTracking.swift */; };
+		DA5FEAAF29BE2701007CF7CE /* VisibilityHeaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAAD29BE2701007CF7CE /* VisibilityHeaderController.swift */; };
+		DA5FEAB029BE2701007CF7CE /* VisibilityCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAAE29BE2701007CF7CE /* VisibilityCellController.swift */; };
+		DA5FEAB329BE270F007CF7CE /* VisibilityLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAB229BE270F007CF7CE /* VisibilityLevel.swift */; };
+		DA5FEAB929BE2724007CF7CE /* VisibilityHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAB529BE2724007CF7CE /* VisibilityHeaderView.swift */; };
+		DA5FEABA29BE2724007CF7CE /* VisibilityLevel+iconImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAB629BE2724007CF7CE /* VisibilityLevel+iconImage.swift */; };
+		DA5FEABB29BE2724007CF7CE /* VisibilityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAB729BE2724007CF7CE /* VisibilityCell.swift */; };
+		DA5FEABC29BE2724007CF7CE /* VisibilityImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAB829BE2724007CF7CE /* VisibilityImage.swift */; };
+		DA5FEABF29BE2738007CF7CE /* VisibilityCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEABE29BE2738007CF7CE /* VisibilityCellViewModel.swift */; };
+		DA5FEAC429BE2765007CF7CE /* VisibilityCellControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAC229BE2765007CF7CE /* VisibilityCellControllerTests.swift */; };
+		DA5FEAC529BE2765007CF7CE /* VisibilityHeaderControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5FEAC329BE2765007CF7CE /* VisibilityHeaderControllerTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA5FEA9C29BE25E7007CF7CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA5FEA6829BE24E3007CF7CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA5FEA6F29BE24E3007CF7CE;
+			remoteInfo = ListControllerPOC;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DA5FEA7029BE24E3007CF7CE /* ListControllerPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListControllerPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +54,38 @@
 		DA5FEA7C29BE24E4007CF7CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA5FEA7F29BE24E4007CF7CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA5FEA8129BE24E4007CF7CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA5FEA8829BE25CD007CF7CE /* SectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionController.swift; sourceTree = "<group>"; };
+		DA5FEA8929BE25CD007CF7CE /* SectionHeaderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderController.swift; sourceTree = "<group>"; };
+		DA5FEA8A29BE25CD007CF7CE /* SectionListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionListController.swift; sourceTree = "<group>"; };
+		DA5FEA8B29BE25CD007CF7CE /* CellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
+		DA5FEA8C29BE25CD007CF7CE /* SectionFooterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionFooterController.swift; sourceTree = "<group>"; };
+		DA5FEA8D29BE25CD007CF7CE /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		DA5FEA9829BE25E7007CF7CE /* ListControllerPOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListControllerPOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA5FEAA229BE2610007CF7CE /* SectionListControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionListControllerTests.swift; sourceTree = "<group>"; };
+		DA5FEAA329BE2610007CF7CE /* ListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewControllerTests.swift; sourceTree = "<group>"; };
+		DA5FEAA729BE261F007CF7CE /* ItemCellControllerSpy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCellControllerSpy.swift; sourceTree = "<group>"; };
+		DA5FEAA929BE265F007CF7CE /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
+		DA5FEAAD29BE2701007CF7CE /* VisibilityHeaderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityHeaderController.swift; sourceTree = "<group>"; };
+		DA5FEAAE29BE2701007CF7CE /* VisibilityCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityCellController.swift; sourceTree = "<group>"; };
+		DA5FEAB229BE270F007CF7CE /* VisibilityLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityLevel.swift; sourceTree = "<group>"; };
+		DA5FEAB529BE2724007CF7CE /* VisibilityHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityHeaderView.swift; sourceTree = "<group>"; };
+		DA5FEAB629BE2724007CF7CE /* VisibilityLevel+iconImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VisibilityLevel+iconImage.swift"; sourceTree = "<group>"; };
+		DA5FEAB729BE2724007CF7CE /* VisibilityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityCell.swift; sourceTree = "<group>"; };
+		DA5FEAB829BE2724007CF7CE /* VisibilityImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityImage.swift; sourceTree = "<group>"; };
+		DA5FEABE29BE2738007CF7CE /* VisibilityCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityCellViewModel.swift; sourceTree = "<group>"; };
+		DA5FEAC229BE2765007CF7CE /* VisibilityCellControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityCellControllerTests.swift; sourceTree = "<group>"; };
+		DA5FEAC329BE2765007CF7CE /* VisibilityHeaderControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityHeaderControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DA5FEA6D29BE24E3007CF7CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5FEA9529BE25E7007CF7CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				DA5FEA7229BE24E3007CF7CE /* ListControllerPOC */,
+				DA5FEA9929BE25E7007CF7CE /* ListControllerPOCTests */,
 				DA5FEA7129BE24E3007CF7CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,11 +108,64 @@
 			isa = PBXGroup;
 			children = (
 				DA5FEA7029BE24E3007CF7CE /* ListControllerPOC.app */,
+				DA5FEA9829BE25E7007CF7CE /* ListControllerPOCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 		DA5FEA7229BE24E3007CF7CE /* ListControllerPOC */ = {
+			isa = PBXGroup;
+			children = (
+				DA5FEAAC29BE26D2007CF7CE /* Visibility */,
+				DA5FEA8729BE25BC007CF7CE /* List */,
+				DA5FEAAB29BE2674007CF7CE /* Main */,
+				DA5FEA8129BE24E4007CF7CE /* Info.plist */,
+			);
+			path = ListControllerPOC;
+			sourceTree = "<group>";
+		};
+		DA5FEA8729BE25BC007CF7CE /* List */ = {
+			isa = PBXGroup;
+			children = (
+				DA5FEA8D29BE25CD007CF7CE /* ListViewController.swift */,
+				DA5FEA8A29BE25CD007CF7CE /* SectionListController.swift */,
+				DA5FEA8829BE25CD007CF7CE /* SectionController.swift */,
+				DA5FEA8929BE25CD007CF7CE /* SectionHeaderController.swift */,
+				DA5FEA8C29BE25CD007CF7CE /* SectionFooterController.swift */,
+				DA5FEA8B29BE25CD007CF7CE /* CellController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		DA5FEA9929BE25E7007CF7CE /* ListControllerPOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA5FEAC129BE275E007CF7CE /* Visibility */,
+				DA5FEAA629BE2618007CF7CE /* SharedTestHelpers */,
+				DA5FEAA129BE25FF007CF7CE /* List */,
+			);
+			path = ListControllerPOCTests;
+			sourceTree = "<group>";
+		};
+		DA5FEAA129BE25FF007CF7CE /* List */ = {
+			isa = PBXGroup;
+			children = (
+				DA5FEAA329BE2610007CF7CE /* ListViewControllerTests.swift */,
+				DA5FEAA229BE2610007CF7CE /* SectionListControllerTests.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		DA5FEAA629BE2618007CF7CE /* SharedTestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				DA5FEAA929BE265F007CF7CE /* XCTestCase+MemoryLeakTracking.swift */,
+				DA5FEAA729BE261F007CF7CE /* ItemCellControllerSpy.swift */,
+			);
+			path = SharedTestHelpers;
+			sourceTree = "<group>";
+		};
+		DA5FEAAB29BE2674007CF7CE /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				DA5FEA7329BE24E3007CF7CE /* AppDelegate.swift */,
@@ -62,9 +174,64 @@
 				DA5FEA7929BE24E3007CF7CE /* Main.storyboard */,
 				DA5FEA7C29BE24E4007CF7CE /* Assets.xcassets */,
 				DA5FEA7E29BE24E4007CF7CE /* LaunchScreen.storyboard */,
-				DA5FEA8129BE24E4007CF7CE /* Info.plist */,
 			);
-			path = ListControllerPOC;
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DA5FEAAC29BE26D2007CF7CE /* Visibility */ = {
+			isa = PBXGroup;
+			children = (
+				DA5FEAB129BE2707007CF7CE /* Controller */,
+				DA5FEABD29BE272B007CF7CE /* View */,
+				DA5FEAC029BE273B007CF7CE /* ViewModel */,
+				DA5FEAB429BE2718007CF7CE /* Model */,
+			);
+			path = Visibility;
+			sourceTree = "<group>";
+		};
+		DA5FEAB129BE2707007CF7CE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA5FEAAE29BE2701007CF7CE /* VisibilityCellController.swift */,
+				DA5FEAAD29BE2701007CF7CE /* VisibilityHeaderController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DA5FEAB429BE2718007CF7CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA5FEAB229BE270F007CF7CE /* VisibilityLevel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA5FEABD29BE272B007CF7CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA5FEAB729BE2724007CF7CE /* VisibilityCell.swift */,
+				DA5FEAB529BE2724007CF7CE /* VisibilityHeaderView.swift */,
+				DA5FEAB829BE2724007CF7CE /* VisibilityImage.swift */,
+				DA5FEAB629BE2724007CF7CE /* VisibilityLevel+iconImage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DA5FEAC029BE273B007CF7CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DA5FEABE29BE2738007CF7CE /* VisibilityCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DA5FEAC129BE275E007CF7CE /* Visibility */ = {
+			isa = PBXGroup;
+			children = (
+				DA5FEAC229BE2765007CF7CE /* VisibilityCellControllerTests.swift */,
+				DA5FEAC329BE2765007CF7CE /* VisibilityHeaderControllerTests.swift */,
+			);
+			path = Visibility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +254,24 @@
 			productReference = DA5FEA7029BE24E3007CF7CE /* ListControllerPOC.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DA5FEA9729BE25E7007CF7CE /* ListControllerPOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA5FEA9E29BE25E7007CF7CE /* Build configuration list for PBXNativeTarget "ListControllerPOCTests" */;
+			buildPhases = (
+				DA5FEA9429BE25E7007CF7CE /* Sources */,
+				DA5FEA9529BE25E7007CF7CE /* Frameworks */,
+				DA5FEA9629BE25E7007CF7CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA5FEA9D29BE25E7007CF7CE /* PBXTargetDependency */,
+			);
+			name = ListControllerPOCTests;
+			productName = ListControllerPOCTests;
+			productReference = DA5FEA9829BE25E7007CF7CE /* ListControllerPOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +284,11 @@
 				TargetAttributes = {
 					DA5FEA6F29BE24E3007CF7CE = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					DA5FEA9729BE25E7007CF7CE = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+						TestTargetID = DA5FEA6F29BE24E3007CF7CE;
 					};
 				};
 			};
@@ -116,6 +306,7 @@
 			projectRoot = "";
 			targets = (
 				DA5FEA6F29BE24E3007CF7CE /* ListControllerPOC */,
+				DA5FEA9729BE25E7007CF7CE /* ListControllerPOCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +322,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA5FEA9629BE25E7007CF7CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +336,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5FEABF29BE2738007CF7CE /* VisibilityCellViewModel.swift in Sources */,
+				DA5FEA9229BE25CD007CF7CE /* SectionFooterController.swift in Sources */,
+				DA5FEA9129BE25CD007CF7CE /* CellController.swift in Sources */,
+				DA5FEAB929BE2724007CF7CE /* VisibilityHeaderView.swift in Sources */,
+				DA5FEABB29BE2724007CF7CE /* VisibilityCell.swift in Sources */,
 				DA5FEA7829BE24E3007CF7CE /* ViewController.swift in Sources */,
 				DA5FEA7429BE24E3007CF7CE /* AppDelegate.swift in Sources */,
 				DA5FEA7629BE24E3007CF7CE /* SceneDelegate.swift in Sources */,
+				DA5FEA9329BE25CD007CF7CE /* ListViewController.swift in Sources */,
+				DA5FEAAF29BE2701007CF7CE /* VisibilityHeaderController.swift in Sources */,
+				DA5FEA8F29BE25CD007CF7CE /* SectionHeaderController.swift in Sources */,
+				DA5FEABA29BE2724007CF7CE /* VisibilityLevel+iconImage.swift in Sources */,
+				DA5FEABC29BE2724007CF7CE /* VisibilityImage.swift in Sources */,
+				DA5FEAB329BE270F007CF7CE /* VisibilityLevel.swift in Sources */,
+				DA5FEA8E29BE25CD007CF7CE /* SectionController.swift in Sources */,
+				DA5FEAB029BE2701007CF7CE /* VisibilityCellController.swift in Sources */,
+				DA5FEA9029BE25CD007CF7CE /* SectionListController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA5FEA9429BE25E7007CF7CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA5FEAA529BE2610007CF7CE /* ListViewControllerTests.swift in Sources */,
+				DA5FEAC429BE2765007CF7CE /* VisibilityCellControllerTests.swift in Sources */,
+				DA5FEAC529BE2765007CF7CE /* VisibilityHeaderControllerTests.swift in Sources */,
+				DA5FEAAA29BE265F007CF7CE /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				DA5FEAA829BE261F007CF7CE /* ItemCellControllerSpy.swift in Sources */,
+				DA5FEAA429BE2610007CF7CE /* SectionListControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA5FEA9D29BE25E7007CF7CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA5FEA6F29BE24E3007CF7CE /* ListControllerPOC */;
+			targetProxy = DA5FEA9C29BE25E7007CF7CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DA5FEA7929BE24E3007CF7CE /* Main.storyboard */ = {
@@ -334,6 +567,55 @@
 			};
 			name = Release;
 		};
+		DA5FEA9F29BE25E7007CF7CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7BQ7XA9X92;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.karthikkmanoj.ListControllerPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ListControllerPOC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ListControllerPOC";
+			};
+			name = Debug;
+		};
+		DA5FEAA029BE25E7007CF7CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7BQ7XA9X92;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.karthikkmanoj.ListControllerPOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ListControllerPOC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ListControllerPOC";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +633,15 @@
 			buildConfigurations = (
 				DA5FEA8529BE24E4007CF7CE /* Debug */,
 				DA5FEA8629BE24E4007CF7CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA5FEA9E29BE25E7007CF7CE /* Build configuration list for PBXNativeTarget "ListControllerPOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA5FEA9F29BE25E7007CF7CE /* Debug */,
+				DA5FEAA029BE25E7007CF7CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
